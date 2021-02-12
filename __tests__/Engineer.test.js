@@ -9,6 +9,16 @@ test("Creates Engineer info", () => {
     expect(engineer.email).toBe("david@email.com");
     expect(engineer.github).toBe('www.github.com');
 
-    console.log(engineer);
 });
 
+test('getGithub() should return github name', () => {
+    const githubTest = 'testUser';
+    const engineer = new Engineer ('David', 23, 'test@test.com', githubTest);
+    expect(engineer.getGithub()).toBe('testUser');
+});
+
+test('getRole() will return "Engineer"', ()=>{
+    const roleTest = "Engineer";
+    const engineer = new Engineer('David', 23, 'test@test.com', 'githubUser');
+    expect(engineer.getRole()).toBe('Engineer');
+});
