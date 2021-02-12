@@ -11,19 +11,19 @@ test("Creates employee info", () => {
 test("getName() will return name", () => {
   const testName = "Raj";
   const employee = new Employee(testName, 3, "test@test.com");
-  expect(employee.getName()).toBe(testName);
+  expect(employee.getName()).toBe('Raj');
 });
 
 test("getId() will return id", () => {
   const testId = 23;
   const employee = new Employee("Raj", testId, "test@test.com");
-  expect(employee.getId()).toBe(testId);
+  expect(employee.getId()).toBe(23);
 });
 
 test("getEmail() will return email", () => {
   const testEmail = "test@test.com";
   const employee = new Employee("Raj", 3, testEmail);
-  expect(employee.getEmail()).toBe(testEmail);
+  expect(employee.getEmail()).toBe('test@test.com');
 });
 
 test("getRole() will return 'Employee'", () => {
