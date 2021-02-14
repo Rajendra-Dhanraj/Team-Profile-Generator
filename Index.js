@@ -172,14 +172,14 @@ promptUser()
   .catch((err) => {
     console.log(err);
   });
-
+// writing file
 const writeFile = (fileContent) => {
   return new Promise((resolve, reject) => {
     fs.writeFile("./dist/index.html", fileContent, (err) => {
       if (err) {
         reject(err);
         return;
-      }
+      } else console.log("Page Created!");
       resolve({
         ok: true,
         message: "File created!",
