@@ -30,7 +30,7 @@ End result from the previous screenshot translated into webpage:
 
 ### Demonstration
 
-[Click to view application walkthrough]()
+[Click to view application walkthrough](https://drive.google.com/file/d/1FfhLCdXSESrVNAk9b5SasWKZiw9patYe/view)
 
 ### Questions
 
