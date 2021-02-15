@@ -86,7 +86,7 @@ function promptUser() {
           ])
           .then(({ officeNumber, addNewEmp }) => {
             manager.push(new Manager(name, id, email, officeNumber));
-            //console.log(teamArr);
+
             if (addNewEmp) {
               return promptUser();
             }
@@ -116,7 +116,7 @@ function promptUser() {
           ])
           .then(({ github, addNewEmp }) => {
             engineer.push(new Engineer(name, id, email, github));
-            //console.log(teamArr);
+
             if (addNewEmp) {
               return promptUser();
             }
@@ -146,7 +146,7 @@ function promptUser() {
           ])
           .then(({ school, addNewEmp }) => {
             intern.push(new Intern(name, id, email, school));
-            //console.log(teamArr);
+
             if (addNewEmp) {
               return promptUser();
             }
